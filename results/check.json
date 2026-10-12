@@ -1,0 +1,41 @@
+{
+  "file": "data/test.csv",
+  "rows": 262144,
+  "states": 51,
+  "clickhouse": "25.8.33.6",
+  "threads": 2,
+  "timing_source": "system.query_log.query_duration_ms",
+  "runs": 10,
+  "cache": "query cache disabled; two warm-up runs per variant",
+  "result_matches_csv": true,
+  "all_stored_rows_match_csv": true,
+  "source_sha256": "4129db5d9079f907d9a38aefc170f5e105a650a8273457aaae02a1f735516eac",
+  "before_seconds": 0.012,
+  "after_seconds": 0.011,
+  "max_seconds": 0.002,
+  "speedup": 1.090909090909091,
+  "max_speedup": 6.0,
+  "extra_speedup": 5.5,
+  "storage": [
+    {
+      "table": "state_maximums",
+      "rows": 51,
+      "bytes": 746
+    },
+    {
+      "table": "transactions",
+      "rows": 262144,
+      "bytes": 4346467
+    },
+    {
+      "table": "transactions_fast",
+      "rows": 262144,
+      "bytes": 2138561
+    }
+  ],
+  "peak_memory_bytes": {
+    "before": 10176333.0,
+    "after": 5446591.0,
+    "max": 5432437.0
+  }
+}
